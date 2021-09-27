@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(44, 44, 44);
+}
+
+.container {
+    max-width: 1517px;
+    margin-top: 100px;
+    box-shadow: 0 0 11px 2px rgb(36, 36, 36);
+}
+
+.container .col-12 {
+    background: #64a2ff;
+}
+
+#navbarTogglerDemo02 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-control {
+    width: 700px;
+}
+
+#temploy {
+    background: #67d5ff;
+    box-shadow: inset 0 0 7px 1px rgb(97, 97, 97);
+}
+
+.boxbig {
+    width: 100%;
+    height: 749px;
+    margin-top: 13px;
+}
+
+.texttop {
+    width: 100%;
+    height: 363px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.city {
+    width: 657px;
+    height: 100%;
+    padding-left: 11px;
+}
+
+.city_info_map {
+    font-size: 53px;
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: 5px;
+    color: rgb(44, 44, 44);
+    border-bottom: 1px solid;
+}
+
+.weathinfo {
+    width: 531px;
+    height: 100%;
+    text-align: end;
+    padding-right: 19px;
+}
+
+.fst_n {
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 63px;
+    letter-spacing: 1px;
+    color: rgb(44, 44, 44);
+    border-bottom: 1px solid;
+    filter: drop-shadow(0 0 5px #000);
+}
+
+.fst_h {
+    text-align: end;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 53px;
+    letter-spacing: 1px;
+    color: rgb(44, 44, 44);
+    padding-left: 9px;
+}
+
+.fst_r {
+    text-align: end;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 53px;
+    letter-spacing: 1px;
+    color: rgb(44, 44, 44);
+    padding-left: 9px;
+}
+
+.blok {
+    display: block;
+}
+
+.blok2 {
+    display: block;
+    font-size: 27px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.divalign {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.fst_y {
+    text-align: end;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 41px;
+    letter-spacing: 1px;
+    margin-top: 11px;
+    color: rgb(44, 44, 44);
+    padding-left: 9px;
+}
+
+/* ============================================================ */
+.hbs_t {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: 3px;
+    padding-left: 19px;
+    color: rgb(44, 44, 44);
+}
+
+.hbs_s {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: 3px;
+    padding-left: 19px;
+    color: rgb(44, 44, 44);
+}
+
+.hbs_d {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: 3px;
+    padding-left: 19px;
+    color: rgb(44, 44, 44);
+}
+
+.boxbig {
+    background: #f4fffa;
+    text-shadow: 0 0 5px rgb(173, 192, 223);
+}
+
+.weath_bottom {
+    width: 100%;
+    background: #cfe5ff;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    margin: 0;
+}
+
+.div {
+    width: 100%;
+    height: 101px;
+    background: #242424;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div:first-child {
+    border-right: 3px solid rgb(100, 100, 100);
+}
+
+.left_inner {
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding-left: 15px;
+}
+
+.right_inner {
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding-right: 15px;
+}
+
+.sef_c {
+    display: block;
+    text-align: start;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    color: #7eb2ff;
+    text-shadow: none;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.sef_g {
+    display: block;
+    text-align: start;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    color: #7eb2ff;
+    text-shadow: none;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.fvg_g {
+    display: block;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    color: #7eb2ff;
+    text-shadow: none;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.fvg_j {
+    display: block;
+    text-align: end;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    color: #7eb2ff;
+    text-shadow: none;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.current_info .blok {
+    border-bottom: 1px solid;
+}
+
+.city_info {
+    display: flex;
+    align-items: center;
+    align-items: flex-end;
+}
+
+.city_length_info {
+    font-size: 19px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid;
+}
+
+.deg {
+    font-size: 25px;
+}
+
+.ffle {
+    font-size: 25px;
+}
+
+.flag {
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    width: auto;
+    height: auto;
+    margin-left: 9px;
+    border-radius: 3px;
+    position: absolute;
+    left: 665px;
+    top: 18px;
+    width: 242px;
+    margin-left: 52px;
+}
+
+.figbig {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 11px rgb(49, 49, 49));
+    border-radius: 3px;
+}
+
+.frominfo {
+    font-size: 63px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.flextre {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.countrinfo {
+    font-size: 63px;
+    font-family: 'Varela Round', sans-serif;
+    padding-right: 19px;
+}
+
+.info_day{
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-right: 7px;
+}
