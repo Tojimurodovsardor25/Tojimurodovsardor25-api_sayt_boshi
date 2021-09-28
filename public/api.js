@@ -26,6 +26,7 @@ function getWeatherData() {
         })
     })
 }
+
 function showWeatherData(data) { //==================================== APIda kelgan ma'lumotlar ombori { }...
     let {
         humidity,
@@ -44,15 +45,15 @@ function showWeatherData(data) { //==================================== APIda ke
     const setinfo = weather[0].icon
     fst_n.innerHTML = `
     <img src = "https://openweathermap.org/img/wn/${setinfo}@2x.png">`
-    if(setinfo == '01d'){
+    if (setinfo == '01d') {
         info_day.innerHTML = 'Quyoshli kun'
-    }else if(setinfo == '02d'){
+    } else if (setinfo == '02d') {
         info_day.innerHTML = 'Bulut va Quyoshli kun'
-    }else if(setinfo == '03d'){
+    } else if (setinfo == '03d') {
         info_day.innerHTML = 'Bulutli kun'
-    }else if(setinfo == '04d'){
+    } else if (setinfo == '04d') {
         info_day.innerHTML = 'Qalin bulutli kun'
-    }else{
+    } else {
         console.error('Iltimos parametrlarni ko`ring kun farmati topilmati :(');
         info_day.innerHTML = 'Iltimos parametrlarni ko`ring kun farmati topilmati :('
     }
@@ -60,6 +61,14 @@ function showWeatherData(data) { //==================================== APIda ke
     const infoline = weather[0].description
     if (infoline === 'clear sky') {
         city_length_info.innerHTML = 'Ochiq osmon'
+    } else if (infoline === 'few clouds') {
+        city_length_info.innerHTML = 'Bulutli kun'
+    } else if (infoline === 'scattered clouds') {
+        city_length_info.innerHTML = 'tarqoq bulutlar'
+    } else if (infoline === 'broken clouds') {
+        city_length_info.innerHTML = 'qalin bulutlar'
+    } else if (infoline === 'overcast clouds') {
+        city_length_info.innerHTML = 'qalin bulutlar'
     } else {
         city_length_info.innerHTML = ' :( descriptionda kelgan ma`lumotni o`zgartiring'
     }
@@ -69,12 +78,6 @@ function showWeatherData(data) { //==================================== APIda ke
 //     .then((datauz) => {
 //         hbs_d.innerHTML = datauz.datetime
 //     });
-fetch(`https://ipgeolocation.abstractapi.com/v1/?api_key=bf6511faeaea415792321186cb641f35`)
-    .then((res) => res.json())
-    .then((apiabstractuz) => {
-        city_info_map.innerHTML = apiabstractuz.city
-    });
-getlocations()
 function getlocations() {
     fetch('https://ipgeolocation.abstractapi.com/v1/?api_key=bf6511faeaea415792321186cb641f35')
         .then((res) => res.json())
@@ -82,18 +85,20 @@ function getlocations() {
             consleTimeData(datatimeuz)
         })
 }
+getlocations()
 function consleTimeData(datatimeuz) {
     let {
         current_time
     } = datatimeuz.timezone
-    let {
-        png
-    } = datatimeuz.flag
+    // let {
+    //     png
+    // } = datatimeuz.flag
     hbs_d.innerHTML = current_time
     city_info_map.innerHTML = datatimeuz.city
-    flag.innerHTML =`
-    <img class="figbig" src = "${png}">
-    `
+    // flag.innerHTML = `
+    // <img class="figbig" src = "${png}">
+    // `
     frominfo.innerHTML = datatimeuz.country
     countrinfo.innerHTML = datatimeuz.continent
+    city_info_map.innerHTML = datatimeuz.city
 } // ================================================================ // API kalitlari ochiq ,ma'lumotlar olindi // consule ...
