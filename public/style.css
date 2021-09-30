@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     color: rgb(44, 44, 44);
+    text-shadow: none;
 }
 
 .col-12 {
@@ -38,20 +39,30 @@ body {
     width: 700px;
 }
 
-.container-fluid{
+.container-fluid {
     background: #bfbfbf;
 }
 
 .boxbig {
-    width: 762px;
+    width: 100%;
     height: 464px;
     margin-top: 3px;
+    box-shadow: 0 0 11px 2px #a9a9a9;
+    border-radius: 9px;
 }
 
 .texttop {
     width: 100%;
     height: 294px;
     position: relative;
+
+}
+
+.texttop2 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 9px;
 }
 
 .city {
@@ -83,7 +94,7 @@ body {
     font-size: 63px;
     letter-spacing: 1px;
     color: rgb(44, 44, 44);
-    filter: drop-shadow(0 0 5px #000);
+    filter: drop-shadow(0 0 5px rgb(136, 136, 136));
     width: 100%;
     height: 111px;
     display: flex;
@@ -98,18 +109,18 @@ body {
 .fst_h {
     text-align: end;
     font-family: 'Varela Round', sans-serif;
-    font-size: 37px;
+    font-size: 27px;
     letter-spacing: 1px;
-    color: rgb(11 0 187);
+    color: #fff;
     padding-left: 9px;
 }
 
 .fst_r {
     text-align: end;
     font-family: 'Varela Round', sans-serif;
-    font-size: 37px;
+    font-size: 27px;
     letter-spacing: 1px;
-    color: rgb(11 0 187);
+    color: #fff;
     padding-left: 9px;
 }
 
@@ -121,6 +132,7 @@ body {
     display: block;
     font-size: 27px;
     font-family: 'Varela Round', sans-serif;
+    color: #959595;
 }
 
 .divalign {
@@ -134,10 +146,10 @@ body {
 .fst_y {
     text-align: end;
     font-family: 'Varela Round', sans-serif;
-    font-size: 37px;
+    font-size: 27px;
     letter-spacing: 1px;
     margin-top: 11px;
-    color: rgb(11 0 187);
+    color: #fff;
     padding-left: 9px;
 }
 
@@ -148,7 +160,7 @@ body {
     font-size: 23px;
     letter-spacing: 3px;
     padding-left: 19px;
-    color: rgb(11 0 187);
+    color: #fff;
 }
 
 .hbs_s {
@@ -157,7 +169,7 @@ body {
     font-size: 23px;
     letter-spacing: 3px;
     padding-left: 19px;
-    color: rgb(11 0 187);
+    color: #fff;
 }
 
 .hbs_d {
@@ -166,12 +178,20 @@ body {
     font-size: 23px;
     letter-spacing: 3px;
     padding-left: 19px;
-    color: rgb(11 0 187);
+    color: #fff;
 }
 
 .boxbig {
-    background: #eff9ff;
+    background: #0a0a0a;
     text-shadow: 0 0 5px rgb(173, 192, 223);
+}
+
+.boxbig2 {
+    background: #050505;
+    text-shadow: 0 0 5px rgb(173, 192, 223);
+    height: auto;
+    box-shadow: 0 0 11px 2px #a9a9a9;
+    border-radius: 9px;
 }
 
 .weath_bottom {
@@ -224,7 +244,7 @@ hr {
     text-align: start;
     font-family: 'Varela Round', sans-serif;
     font-weight: 700;
-    color: #7eb2ff;
+    color: #dae9ff;
     text-shadow: none;
     font-size: 19px;
     letter-spacing: 1px;
@@ -235,7 +255,7 @@ hr {
     text-align: start;
     font-family: 'Varela Round', sans-serif;
     font-weight: 700;
-    color: #7eb2ff;
+    color: #ffffff;
     text-shadow: none;
     font-size: 19px;
     letter-spacing: 1px;
@@ -246,7 +266,7 @@ hr {
     text-align: center;
     font-family: 'Varela Round', sans-serif;
     font-weight: 700;
-    color: #7eb2ff;
+    color: #d2e1f8;
     text-shadow: none;
     font-size: 19px;
     letter-spacing: 1px;
@@ -257,7 +277,7 @@ hr {
     text-align: end;
     font-family: 'Varela Round', sans-serif;
     font-weight: 700;
-    color: #7eb2ff;
+    color: #f5f9ff;
     text-shadow: none;
     font-size: 19px;
     letter-spacing: 1px;
@@ -265,7 +285,7 @@ hr {
 
 .current_info .blok {
     border-bottom: 1px solid;
-    color: #0040b5;
+    color: #b6caf0;
 }
 
 .city_info {
@@ -280,7 +300,7 @@ hr {
     border-bottom: 1px solid;
     width: 100%;
     padding-left: 220px;
-
+    color: #fff;
 }
 
 .deg {
@@ -315,12 +335,424 @@ hr {
     border-radius: 3px;
 }
 
+.frff_l {
+    display: block;
+    text-align: start;
+    padding-left: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.frff_l2 {
+    display: block;
+    text-align: start;
+    padding-left: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.frff_l3 {
+    display: block;
+    text-align: start;
+    padding-left: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.frff_l4 {
+    display: block;
+    text-align: start;
+    padding-left: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.frff_l5 {
+    display: block;
+    text-align: start;
+    padding-left: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.frff_l6 {
+    display: block;
+    text-align: start;
+    padding-left: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.frff_l7 {
+    display: block;
+    text-align: start;
+    padding-left: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.frff_ff {
+    display: block;
+    text-align: start;
+    padding-left: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.frff_ff2 {
+    display: block;
+    text-align: start;
+    padding-left: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.frff_ff3 {
+    display: block;
+    text-align: start;
+    padding-left: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.frff_ff4 {
+    display: block;
+    text-align: start;
+    padding-left: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.frff_ff5 {
+    display: block;
+    text-align: start;
+    padding-left: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.frff_ff6 {
+    display: block;
+    text-align: start;
+    padding-left: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.frff_ff7 {
+    display: block;
+    text-align: start;
+    padding-left: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.feeef_l {
+    text-align: end;
+    padding-right: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.fewg_ff {
+    text-align: end;
+    padding-right: 9px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.info_day_top {
+    padding-left: 11px;
+    font-size: 21px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-weight: 700;
+    width: 100%;
+    height: auto;
+    background-color: rgb(29, 29, 29);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.flexbox {
+    margin-bottom: 9px;
+    box-shadow: 0 0 9px 2px rgb(63, 63, 63);
+    border-radius: 9px;
+}
+
+.post {
+    font-size: 25px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(255, 61, 61);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.weather_info,
+.weather_info2,
+.weather_info3,
+.weather_info4,
+.weather_info5,
+.weather_info6,
+.weather_info7 {
+    width: 200px;
+    height: 100%;
+    background-color: #959595;
+    display: flex;
+    justify-content: center;
+}
+
+.back {
+    width: 40%;
+    height: 100%;
+    background-image: linear-gradient(45deg, black, transparent);
+}
+
+.day1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 59px;
+    background-color: #fff;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.day124324q {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+
+.day124324w {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+
+.day124324e {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+
+.day124324r {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+
+.day124324t {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+
+.day124324y {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+
+.day124324u {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+
+.day242323q {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day242323w {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day242323e {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day242323r {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day242323t {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day242323y {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day242323u {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+
+.day4234q {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day4234w {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day4234e {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day4234r {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day4234t {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day4234y {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day4234u {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+
+.day312443q {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day312443w {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day312443e {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day312443r {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day312443t {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day312443y {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+.day312443u {
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(29, 96, 250);
+    letter-spacing: 1px;
+}
+
 .frominfo {
     font-size: 63px;
     font-family: 'Varela Round', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #2d87c7;
+    color: #d9e4fa;
+    text-shadow: none;
 }
 
 .flextre {
@@ -334,7 +766,8 @@ hr {
     font-size: 63px;
     font-family: 'Varela Round', sans-serif;
     padding-right: 19px;
-    color: #198bdb;
+    color: #959595;
+    text-shadow: none;
 }
 
 .info_day {
@@ -358,4 +791,10 @@ hr {
 
 .fdce .info_day {
     flex-direction: column;
+    color: #959595;
+}
+
+.left_box {
+    width: auto;
+    height: 100%;
 }
