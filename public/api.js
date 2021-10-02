@@ -105,13 +105,13 @@ function showWeatherData(data) { //==================================== APIda ke
     day242323y.innerHTML = day6.humidity
     day242323u.innerHTML = day7.humidity
     /* ====================================== */
-    day312443q.innerHTML = day.wind_deg
-    day312443w.innerHTML = day2.wind_deg
-    day312443e.innerHTML = day3.wind_deg
-    day312443r.innerHTML = day4.wind_deg
-    day312443t.innerHTML = day5.wind_deg
-    day312443y.innerHTML = day6.wind_deg
-    day312443u.innerHTML = day7.wind_deg
+    day312443q.innerHTML = day.wind_speed
+    day312443w.innerHTML = day2.wind_speed
+    day312443e.innerHTML = day3.wind_speed
+    day312443r.innerHTML = day4.wind_speed
+    day312443t.innerHTML = day5.wind_speed
+    day312443y.innerHTML = day6.wind_speed
+    day312443u.innerHTML = day7.wind_speed
     day4234q.innerHTML = day.pressure
     day4234w.innerHTML = day2.pressure
     day4234e.innerHTML = day3.pressure
