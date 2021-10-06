@@ -28,8 +28,8 @@ body {
 }
 
 .flbox {
-    width: 746px;
-    height: 100%;
+    width: 100%;
+    height: 37%;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -45,7 +45,7 @@ body {
 
 .boxbig {
     width: 100%;
-    height: 464px;
+    height: 606px;
     margin-top: 3px;
     box-shadow: 0 0 11px 2px #a9a9a9;
     border-radius: 9px;
@@ -53,7 +53,7 @@ body {
 
 .texttop {
     width: 100%;
-    height: 294px;
+    height: 233px;
     position: relative;
 
 }
@@ -67,7 +67,7 @@ body {
 
 .city {
     width: 657px;
-    height: 96%;
+    height: 100%;
     padding-left: 11px;
 }
 
@@ -81,7 +81,7 @@ body {
 
 .weathinfo {
     width: 100%;
-    height: 100%;
+    height: 371px;
     text-align: end;
     padding-right: 19px;
     display: flex;
@@ -295,11 +295,11 @@ hr {
 }
 
 .city_length_info {
-    font-size: 19px;
+    font-size: 17px;
     letter-spacing: 2px;
     border-bottom: 1px solid;
-    width: 100%;
-    padding-left: 220px;
+    width: 87%;
+    padding-left: 185px;
     color: #fff;
 }
 
@@ -552,9 +552,9 @@ hr {
 }
 
 .back {
-    width: 40%;
+    width: 30%;
     height: 100%;
-    background-image: linear-gradient(45deg, black, transparent);
+    background-image: linear-gradient(45deg, black, transparent)
 }
 
 .day1 {
@@ -792,6 +792,9 @@ hr {
 .fdce .info_day {
     flex-direction: column;
     color: #959595;
+    text-align: start;
+    font-size: 13px;
+    margin-left: 23px;
 }
 
 .left_box {
