@@ -2,11 +2,12 @@
 const API_KEYSUZ = "316b9736dbcafba7127d93281fa85cc0";
 getWeatherData()
 function getWeatherData() {
-    navigator.geolocation.getCurrentPosition((success) => {
+    navigator.geolocation.getCurrentPosition((joylashuv) => {
         let {
-            latitude,
-            longitude,
-        } = success.coords;
+            latitude, // Joylashuv nuqtasi (kenglik bilan) 
+            longitude, // Joylashuv nuqtasi (uzunlik bilan)
+        } = joylashuv.coords;
+        // Fetch API so'rov va javonlar bilan ishlash uchun eng sodda javascript interfeysi
         fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=daily,minutely&units=metric&appid=${API_KEYSUZ}`).then(res => res.json()).then(data => {
             showWeatherData(data);
         })
