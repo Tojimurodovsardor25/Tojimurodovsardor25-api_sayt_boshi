@@ -11,6 +11,7 @@ function getWeatherData() {
         fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=daily,minutely&units=metric&appid=${API_KEYSUZ}`).then(res => res.json()).then(data => {
             showWeatherData(data);
         })
+        // ---> Fetch so'rovi faqat HTTP ko'rinishida javob beradi, json tarkibidagi javoblardan foydalanish uchun biz json() usulidan foydalanamiz, ( Response va Request ) javobi obyekt { } ko'rinishida...
     })
 }
 
